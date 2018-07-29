@@ -28,5 +28,5 @@ Ammar Dabaan
 ammar.dabaan99@gmail.com
 
 exe file:
-https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Debug/The%20Moving%20Tool.exe
+https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Debug/FileOrganizingTool.exe
 
