@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\TheMoveTool.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\bin\Debug\The Moving Tool.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\bin\Debug\The Moving Tool.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\bin\Debug\The Moving Tool.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\bin\Debug\The Moving Tool.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\TheMovingTool.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\TheMovingTool.Form2.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\TheMovingTool.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\The Moving Tool.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\The Moving Tool.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsApplication7\WindowsApplication7\obj\Debug\The Moving Tool.pdb

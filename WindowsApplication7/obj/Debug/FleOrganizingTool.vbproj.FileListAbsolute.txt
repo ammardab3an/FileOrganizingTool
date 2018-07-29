@@ -1,0 +1,17 @@
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\bin\Debug\FleOrganizingTool.exe.config
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\bin\Debug\FleOrganizingTool.exe
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\bin\Debug\FleOrganizingTool.pdb
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\bin\Debug\FleOrganizingTool.xml
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.Form2.resources
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.Form3.resources
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.Form4.resources
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.Resources.resources
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.vbproj.GenerateResource.Cache
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.exe
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.xml
+C:\Users\Windows\Desktop\my git\FleOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.pdb
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FleOrganizingTool.exe.config
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.exe
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.xml
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FleOrganizingTool.pdb
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FileOrganizingTool.exe.config

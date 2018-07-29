@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FileOrganizingTool
+</name>
+</assembly>
+<members>
+<member name="T:FileOrganizingTool.Helpers">
+	<summary>
+ MetroDisk
+ Created by: iSynthesis (HF)
+ Modified by: King Aldrin
+ Version: 1.0.6
+ Date Crafted: 26/01/2014
+ Email: king.aldrin31@gmail.com
+ For any bugs / errors, PM me.
+ </summary>
+	<remarks></remarks>
+ to remove the text, goto line 99
+
+</member><member name="F:FileOrganizingTool.MDAlertBox.W">
+	<summary>
+ How to use: FlatAlertBox.ShowControl(Kind, String, Interval)
+ </summary>
+	<remarks></remarks>
+</member><member name="P:FileOrganizingTool.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FileOrganizingTool.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:FileOrganizingTool.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

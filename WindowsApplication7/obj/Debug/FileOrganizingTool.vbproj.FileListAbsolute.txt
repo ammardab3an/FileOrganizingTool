@@ -1,0 +1,12 @@
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FileOrganizingTool.exe.config
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FileOrganizingTool.exe
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FileOrganizingTool.pdb
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\bin\Debug\FileOrganizingTool.xml
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.Form2.resources
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.Form3.resources
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.Form4.resources
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.Resources.resources
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.vbproj.GenerateResource.Cache
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.exe
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.xml
+C:\Users\Windows\Desktop\my git\FileOrganizingTool\WindowsApplication7\obj\Debug\FileOrganizingTool.pdb
