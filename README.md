@@ -1,5 +1,5 @@
 # FilesOrganizingTool
-a tool you can use to organize your torrent episodes files
+A tool you can use to organize your torrent episodes files
 
 when you download your favorate show episodes from the torrent (for example game of thrones)
 after a while you will have soo many files like i do
