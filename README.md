@@ -1,4 +1,4 @@
-# FileOrganizingTool
+# FilesOrganizingTool
 a tool you can use to organize your torrent episodes files
 
 when you download your favorate show episodes from the torrent (for example game of thrones)
@@ -28,5 +28,5 @@ Ammar Dabaan
 ammar.dabaan99@gmail.com
 
 exe file:
-https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Debug/FileOrganizingTool.exe
+https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Debug/FilesOrganizingTool.exe
 

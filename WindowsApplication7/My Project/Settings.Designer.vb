@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.FileOrganizingTool.My.MySettings
+        Friend ReadOnly Property Settings() As Global.FilesOrganizingTool.My.MySettings
             Get
-                Return Global.FileOrganizingTool.My.MySettings.Default
+                Return Global.FilesOrganizingTool.My.MySettings.Default
             End Get
         End Property
     End Module

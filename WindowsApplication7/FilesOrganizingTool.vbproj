@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A66E9008-CC39-4DEA-9C36-EC8F00BA2B6D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>FileOrganizingTool.My.MyApplication</StartupObject>
-    <RootNamespace>FileOrganizingTool</RootNamespace>
-    <AssemblyName>FileOrganizingTool</AssemblyName>
+    <StartupObject>FilesOrganizingTool.My.MyApplication</StartupObject>
+    <RootNamespace>FilesOrganizingTool</RootNamespace>
+    <AssemblyName>FilesOrganizingTool</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -35,7 +35,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>FileOrganizingTool.xml</DocumentationFile>
+    <DocumentationFile>FilesOrganizingTool.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -45,7 +45,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>FileOrganizingTool.xml</DocumentationFile>
+    <DocumentationFile>FilesOrganizingTool.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

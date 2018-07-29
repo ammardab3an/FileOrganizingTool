@@ -22,9 +22,9 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.FormSkin1 = New FileOrganizingTool.FormSkin()
-        Me.MdButton2 = New FileOrganizingTool.MDButton()
-        Me.MdLabel1 = New FileOrganizingTool.MDLabel()
+        Me.FormSkin1 = New FilesOrganizingTool.FormSkin()
+        Me.MdButton2 = New FilesOrganizingTool.MDButton()
+        Me.MdLabel1 = New FilesOrganizingTool.MDLabel()
         Me.FormSkin1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +46,7 @@ Partial Class Form3
         Me.FormSkin1.Name = "FormSkin1"
         Me.FormSkin1.Size = New System.Drawing.Size(428, 261)
         Me.FormSkin1.TabIndex = 0
-        Me.FormSkin1.Text = "FileOrganizingTool"
+        Me.FormSkin1.Text = "FilesOrganizingTool"
         '
         'MdButton2
         '
@@ -71,10 +71,10 @@ Partial Class Form3
         Me.MdLabel1.ForeColor = System.Drawing.Color.White
         Me.MdLabel1.Location = New System.Drawing.Point(12, 108)
         Me.MdLabel1.Name = "MdLabel1"
-        Me.MdLabel1.Size = New System.Drawing.Size(401, 75)
+        Me.MdLabel1.Size = New System.Drawing.Size(409, 75)
         Me.MdLabel1.TabIndex = 0
-        Me.MdLabel1.Text = "made by Ammar Dabaan" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "github.com/ammardab3an/FileOrganizingTool" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ammar.dabaan99@g" & _
-    "mail.com"
+        Me.MdLabel1.Text = "made by Ammar Dabaan" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "github.com/ammardab3an/FilesOrganizingTool" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ammar.dabaan99@" & _
+    "gmail.com"
         '
         'Form3
         '
@@ -92,7 +92,7 @@ Partial Class Form3
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents FormSkin1 As FileOrganizingTool.FormSkin
-    Friend WithEvents MdLabel1 As FileOrganizingTool.MDLabel
-    Friend WithEvents MdButton2 As FileOrganizingTool.MDButton
+    Friend WithEvents FormSkin1 As FilesOrganizingTool.FormSkin
+    Friend WithEvents MdLabel1 As FilesOrganizingTool.MDLabel
+    Friend WithEvents MdButton2 As FilesOrganizingTool.MDButton
 End Class

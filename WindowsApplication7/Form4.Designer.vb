@@ -22,18 +22,18 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DialogSkin1 = New FileOrganizingTool.DialogSkin()
-        Me.MdButton2 = New FileOrganizingTool.MDButton()
-        Me.MdButton1 = New FileOrganizingTool.MDButton()
-        Me.MdLabel1 = New FileOrganizingTool.MDLabel()
+        Me.DialogSkin1 = New FilesOrganizingTool.DialogSkin()
+        Me.MdButton2 = New FilesOrganizingTool.MDButton()
+        Me.MdButton1 = New FilesOrganizingTool.MDButton()
+        Me.MdLabel1 = New FilesOrganizingTool.MDLabel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.MdTextBox1 = New FileOrganizingTool.MDTextBox()
+        Me.MdTextBox1 = New FilesOrganizingTool.MDTextBox()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.MdButton3 = New FileOrganizingTool.MDButton()
+        Me.MdButton3 = New FilesOrganizingTool.MDButton()
         Me.DialogSkin1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -210,16 +210,16 @@ Partial Class Form4
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents DialogSkin1 As FileOrganizingTool.DialogSkin
+    Friend WithEvents DialogSkin1 As FilesOrganizingTool.DialogSkin
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
-    Friend WithEvents MdTextBox1 As FileOrganizingTool.MDTextBox
+    Friend WithEvents MdTextBox1 As FilesOrganizingTool.MDTextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents MdLabel1 As FileOrganizingTool.MDLabel
-    Friend WithEvents MdButton1 As FileOrganizingTool.MDButton
-    Friend WithEvents MdButton2 As FileOrganizingTool.MDButton
-    Friend WithEvents MdButton3 As FileOrganizingTool.MDButton
+    Friend WithEvents MdLabel1 As FilesOrganizingTool.MDLabel
+    Friend WithEvents MdButton1 As FilesOrganizingTool.MDButton
+    Friend WithEvents MdButton2 As FilesOrganizingTool.MDButton
+    Friend WithEvents MdButton3 As FilesOrganizingTool.MDButton
 End Class

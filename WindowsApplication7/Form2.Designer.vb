@@ -22,25 +22,25 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DialogSkin1 = New FileOrganizingTool.DialogSkin()
+        Me.DialogSkin1 = New FilesOrganizingTool.DialogSkin()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.MdButton4 = New FileOrganizingTool.MDButton()
-        Me.MdButton3 = New FileOrganizingTool.MDButton()
-        Me.MdLabel1 = New FileOrganizingTool.MDLabel()
-        Me.MdNumeric1 = New FileOrganizingTool.MDNumeric()
-        Me.MdToggle1 = New FileOrganizingTool.MDToggle()
-        Me.TextBox4 = New FileOrganizingTool.MDTextBox()
-        Me.MdButton2 = New FileOrganizingTool.MDButton()
-        Me.CheckBox1 = New FileOrganizingTool.MDCheckBox()
-        Me.MdButton1 = New FileOrganizingTool.MDButton()
+        Me.MdButton4 = New FilesOrganizingTool.MDButton()
+        Me.MdButton3 = New FilesOrganizingTool.MDButton()
+        Me.MdLabel1 = New FilesOrganizingTool.MDLabel()
+        Me.MdNumeric1 = New FilesOrganizingTool.MDNumeric()
+        Me.MdToggle1 = New FilesOrganizingTool.MDToggle()
+        Me.TextBox4 = New FilesOrganizingTool.MDTextBox()
+        Me.MdButton2 = New FilesOrganizingTool.MDButton()
+        Me.CheckBox1 = New FilesOrganizingTool.MDCheckBox()
+        Me.MdButton1 = New FilesOrganizingTool.MDButton()
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New FileOrganizingTool.MDNumeric()
-        Me.TextBox3 = New FileOrganizingTool.MDTextBox()
+        Me.NumericUpDown1 = New FilesOrganizingTool.MDNumeric()
+        Me.TextBox3 = New FilesOrganizingTool.MDTextBox()
         Me.DialogSkin1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -78,7 +78,7 @@ Partial Class Form2
         Me.DialogSkin1.Name = "DialogSkin1"
         Me.DialogSkin1.Size = New System.Drawing.Size(545, 673)
         Me.DialogSkin1.TabIndex = 0
-        Me.DialogSkin1.Text = "FileOrganizingTool"
+        Me.DialogSkin1.Text = "FilesOrganizingTool"
         '
         'ListBox2
         '
@@ -164,7 +164,7 @@ Partial Class Form2
         Me.MdToggle1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.MdToggle1.Location = New System.Drawing.Point(264, 178)
         Me.MdToggle1.Name = "MdToggle1"
-        Me.MdToggle1.Options = FileOrganizingTool.MDToggle._Options.Style1
+        Me.MdToggle1.Options = FilesOrganizingTool.MDToggle._Options.Style1
         Me.MdToggle1.Size = New System.Drawing.Size(76, 33)
         Me.MdToggle1.TabIndex = 27
         Me.MdToggle1.Text = "MdToggle1"
@@ -210,7 +210,7 @@ Partial Class Form2
         Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.CheckBox1.Location = New System.Drawing.Point(22, 189)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Options = FileOrganizingTool.MDCheckBox._Options.Style1
+        Me.CheckBox1.Options = FilesOrganizingTool.MDCheckBox._Options.Style1
         Me.CheckBox1.Size = New System.Drawing.Size(221, 22)
         Me.CheckBox1.TabIndex = 22
         Me.CheckBox1.Text = "put each file in a different folder"
@@ -325,23 +325,23 @@ Partial Class Form2
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents DialogSkin1 As FileOrganizingTool.DialogSkin
+    Friend WithEvents DialogSkin1 As FilesOrganizingTool.DialogSkin
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown1 As FileOrganizingTool.MDNumeric
-    Friend WithEvents TextBox3 As FileOrganizingTool.MDTextBox
+    Friend WithEvents NumericUpDown1 As FilesOrganizingTool.MDNumeric
+    Friend WithEvents TextBox3 As FilesOrganizingTool.MDTextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents MdButton1 As FileOrganizingTool.MDButton
-    Friend WithEvents CheckBox1 As FileOrganizingTool.MDCheckBox
-    Friend WithEvents MdButton2 As FileOrganizingTool.MDButton
-    Friend WithEvents TextBox4 As FileOrganizingTool.MDTextBox
-    Friend WithEvents MdNumeric1 As FileOrganizingTool.MDNumeric
-    Friend WithEvents MdToggle1 As FileOrganizingTool.MDToggle
+    Friend WithEvents MdButton1 As FilesOrganizingTool.MDButton
+    Friend WithEvents CheckBox1 As FilesOrganizingTool.MDCheckBox
+    Friend WithEvents MdButton2 As FilesOrganizingTool.MDButton
+    Friend WithEvents TextBox4 As FilesOrganizingTool.MDTextBox
+    Friend WithEvents MdNumeric1 As FilesOrganizingTool.MDNumeric
+    Friend WithEvents MdToggle1 As FilesOrganizingTool.MDToggle
     Friend WithEvents Label55 As System.Windows.Forms.Label
-    Friend WithEvents MdLabel1 As FileOrganizingTool.MDLabel
-    Friend WithEvents MdButton3 As FileOrganizingTool.MDButton
-    Friend WithEvents MdButton4 As FileOrganizingTool.MDButton
+    Friend WithEvents MdLabel1 As FilesOrganizingTool.MDLabel
+    Friend WithEvents MdButton3 As FilesOrganizingTool.MDButton
+    Friend WithEvents MdButton4 As FilesOrganizingTool.MDButton
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
 End Class
