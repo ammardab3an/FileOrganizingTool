@@ -23,6 +23,8 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DialogSkin1 = New FilesOrganizingTool.DialogSkin()
+        Me.MdButton5 = New FilesOrganizingTool.MDButton()
+        Me.MdButton3 = New FilesOrganizingTool.MDButton()
         Me.MdButton2 = New FilesOrganizingTool.MDButton()
         Me.MdButton1 = New FilesOrganizingTool.MDButton()
         Me.MdLabel1 = New FilesOrganizingTool.MDLabel()
@@ -33,7 +35,6 @@ Partial Class Form4
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.MdButton3 = New FilesOrganizingTool.MDButton()
         Me.DialogSkin1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,6 +44,7 @@ Partial Class Form4
         Me.DialogSkin1.BackColor = System.Drawing.Color.White
         Me.DialogSkin1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DialogSkin1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.DialogSkin1.Controls.Add(Me.MdButton5)
         Me.DialogSkin1.Controls.Add(Me.MdButton3)
         Me.DialogSkin1.Controls.Add(Me.MdButton2)
         Me.DialogSkin1.Controls.Add(Me.MdButton1)
@@ -66,6 +68,35 @@ Partial Class Form4
         Me.DialogSkin1.TabIndex = 0
         Me.DialogSkin1.Text = "AutoTorrentFilesOrganizer"
         '
+        'MdButton5
+        '
+        Me.MdButton5.BackColor = System.Drawing.Color.Transparent
+        Me.MdButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MdButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MdButton5.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.MdButton5.ImeMode = System.Windows.Forms.ImeMode.[On]
+        Me.MdButton5.Location = New System.Drawing.Point(522, 12)
+        Me.MdButton5.Name = "MdButton5"
+        Me.MdButton5.Rounded = False
+        Me.MdButton5.Size = New System.Drawing.Size(37, 26)
+        Me.MdButton5.TabIndex = 34
+        Me.MdButton5.Text = "---"
+        Me.MdButton5.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        '
+        'MdButton3
+        '
+        Me.MdButton3.BackColor = System.Drawing.Color.Transparent
+        Me.MdButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MdButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MdButton3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MdButton3.Location = New System.Drawing.Point(280, 92)
+        Me.MdButton3.Name = "MdButton3"
+        Me.MdButton3.Rounded = False
+        Me.MdButton3.Size = New System.Drawing.Size(340, 53)
+        Me.MdButton3.TabIndex = 33
+        Me.MdButton3.Text = "Undo the last move"
+        Me.MdButton3.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        '
         'MdButton2
         '
         Me.MdButton2.BackColor = System.Drawing.Color.Transparent
@@ -87,7 +118,7 @@ Partial Class Form4
         Me.MdButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.MdButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MdButton1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.MdButton1.Location = New System.Drawing.Point(450, 12)
+        Me.MdButton1.Location = New System.Drawing.Point(410, 12)
         Me.MdButton1.Name = "MdButton1"
         Me.MdButton1.Rounded = False
         Me.MdButton1.Size = New System.Drawing.Size(106, 26)
@@ -180,20 +211,6 @@ Partial Class Form4
         Me.TextBox1.TabIndex = 3
         Me.TextBox1.Visible = False
         '
-        'MdButton3
-        '
-        Me.MdButton3.BackColor = System.Drawing.Color.Transparent
-        Me.MdButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.MdButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MdButton3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MdButton3.Location = New System.Drawing.Point(280, 92)
-        Me.MdButton3.Name = "MdButton3"
-        Me.MdButton3.Rounded = False
-        Me.MdButton3.Size = New System.Drawing.Size(340, 53)
-        Me.MdButton3.TabIndex = 33
-        Me.MdButton3.Text = "Undo the last move"
-        Me.MdButton3.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -222,4 +239,5 @@ Partial Class Form4
     Friend WithEvents MdButton1 As FilesOrganizingTool.MDButton
     Friend WithEvents MdButton2 As FilesOrganizingTool.MDButton
     Friend WithEvents MdButton3 As FilesOrganizingTool.MDButton
+    Friend WithEvents MdButton5 As FilesOrganizingTool.MDButton
 End Class

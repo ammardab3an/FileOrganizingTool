@@ -124,4 +124,8 @@
 
         Next
     End Sub
+
+    Private Sub MdButton5_Click(sender As Object, e As EventArgs) Handles MdButton5.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class

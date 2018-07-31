@@ -121,7 +121,7 @@
 
   
     Private Sub MdButton3_Click(sender As Object, e As EventArgs) Handles MdButton3.Click
-        Form3.Show()
+        Form3.ShowDialog()
         Form3.Focus()
     End Sub
 
@@ -132,8 +132,14 @@
     End Sub
 
 
+
+
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         ListBox1.HorizontalScrollbar = True
         ListBox2.HorizontalScrollbar = True
+    End Sub
+
+    Private Sub MdButton5_Click(sender As Object, e As EventArgs) Handles MdButton5.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

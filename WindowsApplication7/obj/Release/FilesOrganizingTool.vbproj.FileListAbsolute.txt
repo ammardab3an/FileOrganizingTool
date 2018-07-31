@@ -1,0 +1,12 @@
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Release\FilesOrganizingTool.exe.config
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Release\FilesOrganizingTool.exe
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Release\FilesOrganizingTool.pdb
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Release\FilesOrganizingTool.xml
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.Form2.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.Form3.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.Form4.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.Resources.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.vbproj.GenerateResource.Cache
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.exe
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.xml
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Release\FilesOrganizingTool.pdb

@@ -41,6 +41,7 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.NumericUpDown1 = New FilesOrganizingTool.MDNumeric()
         Me.TextBox3 = New FilesOrganizingTool.MDTextBox()
+        Me.MdButton5 = New FilesOrganizingTool.MDButton()
         Me.DialogSkin1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,6 +59,7 @@ Partial Class Form2
         Me.DialogSkin1.Controls.Add(Me.MdNumeric1)
         Me.DialogSkin1.Controls.Add(Me.MdToggle1)
         Me.DialogSkin1.Controls.Add(Me.TextBox4)
+        Me.DialogSkin1.Controls.Add(Me.MdButton5)
         Me.DialogSkin1.Controls.Add(Me.MdButton2)
         Me.DialogSkin1.Controls.Add(Me.CheckBox1)
         Me.DialogSkin1.Controls.Add(Me.MdButton1)
@@ -106,7 +108,7 @@ Partial Class Form2
         Me.MdButton4.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.MdButton4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MdButton4.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.MdButton4.Location = New System.Drawing.Point(305, 12)
+        Me.MdButton4.Location = New System.Drawing.Point(278, 12)
         Me.MdButton4.Name = "MdButton4"
         Me.MdButton4.Rounded = False
         Me.MdButton4.Size = New System.Drawing.Size(106, 26)
@@ -120,7 +122,7 @@ Partial Class Form2
         Me.MdButton3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.MdButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MdButton3.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.MdButton3.Location = New System.Drawing.Point(417, 12)
+        Me.MdButton3.Location = New System.Drawing.Point(391, 12)
         Me.MdButton3.Name = "MdButton3"
         Me.MdButton3.Rounded = False
         Me.MdButton3.Size = New System.Drawing.Size(55, 26)
@@ -191,10 +193,10 @@ Partial Class Form2
         Me.MdButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MdButton2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.MdButton2.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.MdButton2.Location = New System.Drawing.Point(478, 12)
+        Me.MdButton2.Location = New System.Drawing.Point(496, 12)
         Me.MdButton2.Name = "MdButton2"
         Me.MdButton2.Rounded = False
-        Me.MdButton2.Size = New System.Drawing.Size(55, 26)
+        Me.MdButton2.Size = New System.Drawing.Size(37, 26)
         Me.MdButton2.TabIndex = 23
         Me.MdButton2.Text = "Exit"
         Me.MdButton2.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -309,6 +311,21 @@ Partial Class Form2
         Me.TextBox3.TextColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.TextBox3.UseSystemPasswordChar = False
         '
+        'MdButton5
+        '
+        Me.MdButton5.BackColor = System.Drawing.Color.Transparent
+        Me.MdButton5.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MdButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MdButton5.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.MdButton5.ImeMode = System.Windows.Forms.ImeMode.[On]
+        Me.MdButton5.Location = New System.Drawing.Point(453, 12)
+        Me.MdButton5.Name = "MdButton5"
+        Me.MdButton5.Rounded = False
+        Me.MdButton5.Size = New System.Drawing.Size(37, 26)
+        Me.MdButton5.TabIndex = 23
+        Me.MdButton5.Text = "---"
+        Me.MdButton5.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -344,4 +361,5 @@ Partial Class Form2
     Friend WithEvents MdButton4 As FilesOrganizingTool.MDButton
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
+    Friend WithEvents MdButton5 As FilesOrganizingTool.MDButton
 End Class

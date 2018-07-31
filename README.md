@@ -28,5 +28,5 @@ Ammar Dabaan
 ammar.dabaan99@gmail.com
 
 exe file:
-https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Debug/FilesOrganizingTool.exe
+https://github.com/ammardab3an/FileOrganizingTool/raw/master/WindowsApplication7/bin/Release/FilesOrganizingTool.exe
 

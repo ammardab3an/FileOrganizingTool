@@ -14,3 +14,15 @@ C:\Users\Windows\Desktop\my git\FilesOrganizingTool\WindowsApplication7\bin\Debu
 C:\Users\Windows\Desktop\my git\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.exe
 C:\Users\Windows\Desktop\my git\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.xml
 C:\Users\Windows\Desktop\my git\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.pdb
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Debug\FilesOrganizingTool.exe.config
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.exe
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.xml
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.pdb
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Debug\FilesOrganizingTool.exe
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Debug\FilesOrganizingTool.pdb
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\bin\Debug\FilesOrganizingTool.xml
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.Form2.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.Form3.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.Form4.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.Resources.resources
+C:\Users\Windows\Desktop\FilesOrganizingTool\WindowsApplication7\obj\Debug\FilesOrganizingTool.vbproj.GenerateResource.Cache
