@@ -23,6 +23,7 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.FormSkin1 = New FilesOrganizingTool.FormSkin()
+        Me.MdButton1 = New FilesOrganizingTool.MDButton()
         Me.MdButton2 = New FilesOrganizingTool.MDButton()
         Me.MdLabel1 = New FilesOrganizingTool.MDLabel()
         Me.FormSkin1.SuspendLayout()
@@ -33,6 +34,7 @@ Partial Class Form3
         Me.FormSkin1.BackColor = System.Drawing.Color.White
         Me.FormSkin1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.FormSkin1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.FormSkin1.Controls.Add(Me.MdButton1)
         Me.FormSkin1.Controls.Add(Me.MdButton2)
         Me.FormSkin1.Controls.Add(Me.MdLabel1)
         Me.FormSkin1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -44,9 +46,23 @@ Partial Class Form3
         Me.FormSkin1.Location = New System.Drawing.Point(0, 0)
         Me.FormSkin1.MDColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.FormSkin1.Name = "FormSkin1"
-        Me.FormSkin1.Size = New System.Drawing.Size(428, 261)
+        Me.FormSkin1.Size = New System.Drawing.Size(428, 306)
         Me.FormSkin1.TabIndex = 0
         Me.FormSkin1.Text = "FilesOrganizingTool"
+        '
+        'MdButton1
+        '
+        Me.MdButton1.BackColor = System.Drawing.Color.Transparent
+        Me.MdButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MdButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MdButton1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.MdButton1.Location = New System.Drawing.Point(74, 239)
+        Me.MdButton1.Name = "MdButton1"
+        Me.MdButton1.Rounded = False
+        Me.MdButton1.Size = New System.Drawing.Size(281, 32)
+        Me.MdButton1.TabIndex = 1
+        Me.MdButton1.Text = "download the lastest version"
+        Me.MdButton1.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
         '
         'MdButton2
         '
@@ -80,7 +96,7 @@ Partial Class Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(428, 261)
+        Me.ClientSize = New System.Drawing.Size(428, 306)
         Me.Controls.Add(Me.FormSkin1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form3"
@@ -95,4 +111,5 @@ Partial Class Form3
     Friend WithEvents FormSkin1 As FilesOrganizingTool.FormSkin
     Friend WithEvents MdLabel1 As FilesOrganizingTool.MDLabel
     Friend WithEvents MdButton2 As FilesOrganizingTool.MDButton
+    Friend WithEvents MdButton1 As FilesOrganizingTool.MDButton
 End Class
