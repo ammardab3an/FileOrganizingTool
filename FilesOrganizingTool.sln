@@ -15,6 +15,7 @@ Global
 		{A66E9008-CC39-4DEA-9C36-EC8F00BA2B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A66E9008-CC39-4DEA-9C36-EC8F00BA2B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A66E9008-CC39-4DEA-9C36-EC8F00BA2B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66E9008-CC39-4DEA-9C36-EC8F00BA2B6D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
