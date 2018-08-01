@@ -2,7 +2,7 @@
     Dim sourcefile As IO.FileInfo
     Dim destfile As IO.FileInfo
     Dim themovedfile(,) As IO.FileInfo
-    Dim yy As Integer
+    Dim yy As Integer = Nothing
     Private Sub DialogSkin1_DragDrop(sender As Object, e As DragEventArgs) Handles DialogSkin1.DragDrop
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
@@ -11,47 +11,56 @@
         Dim movedfile(9999, 1) As IO.FileInfo
         Dim x As Integer = -1
 
-
         For Each path In files
-            x += 1
+
             Dim MyFile = New IO.FileInfo(path)
-            Dim FileName As String = MyFile.Name
+            Dim FileNumber As String = thereIsAnyFileNumber(MyFile.Name)
+
+            If FileNumber = Nothing Then
+                MsgBox("The file: " & MyFile.Name & vbNewLine & "doesn't have a (file number) like (S01E01)")
+            ElseIf FileNumber = "more" Then
+                MsgBox("The file: " & MyFile.Name & vbNewLine & "has more than one (file number)")
+            Else
+
+                x += 1
+                Dim season As String
+                Dim episode As String
+
+                season = "S" & FileNumber.Chars(1) & FileNumber.Chars(2)
+                episode = "E" & FileNumber.Chars(4) & FileNumber.Chars(5)
+
+                Dim _target As String
+
+                If MdTextBox1.Text = "" Then
+                    _target = MyFile.Directory.ToString & "\" & season
+                Else
+                    _target = MyFile.Directory.ToString & "\" & MdTextBox1.Text & " " & season
+                End If
 
 
-            Dim FileNumber As String
-            Dim season As String
-            Dim a As String
-            Dim b As String
-            a = "S0"
-            b = InStr(MyFile.Name, a)
-            TextBox1.Text = MyFile.Name
-            If b Then
+                Dim target As String = _target & "\" & season & episode
 
-                TextBox1.Focus()
-                TextBox1.SelectionStart = b - 1
-                TextBox1.SelectionLength = 6
-                FileNumber = TextBox1.SelectedText
-
-                TextBox1.Focus()
-                TextBox1.SelectionStart = b - 1
-                TextBox1.SelectionLength = 3
-                season = TextBox1.SelectedText
-
-
-
-                Dim _target As String = MyFile.Directory.ToString & "\" & MdTextBox1.Text & " " & season
-                Dim target As String = _target & "\" & FileNumber
                 destfile = New IO.FileInfo(target & "\" & MyFile.Name)
 
                 movedfile(x, 0) = (MyFile)
                 movedfile(x, 1) = (destfile)
-                creatdirectory(_target)
-                creatdirectory(target)
-                movethat(MyFile, destfile)
 
-                If CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
+                Dim _CreatDirectorfDone As Integer = creatdirectory(target)
+                Dim __CreatDirectorfDone As Integer = creatdirectory(_target)
+                Dim MoveThatDone As Integer = movethat(MyFile, destfile)
+
+
+                If _CreatDirectorfDone = 1 AndAlso __CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
                     ListBox1.Items.Add("\" & MyFile.Name)
-                    ListBox2.Items.Add("\" & MdTextBox1.Text & " " & season & "\" & FileNumber & "\" & MyFile.Name)
+
+                    If MdTextBox1.Text = "" Then
+                        ListBox2.Items.Add("\" & season & "\" & season & episode & "\" & MyFile.Name)
+                    Else
+                        ListBox2.Items.Add("\" & MdTextBox1.Text & " " & season & "\" & season & episode & "\" & MyFile.Name)
+                    End If
+
+
+
                     ListBox3.Items.Add(FileNumber)
                 End If
                 If MoveThatDone = 0 Then
@@ -62,9 +71,8 @@
                     End Try
                 End If
 
-            Else
-                MsgBox("The file: " & MyFile.Name & vbNewLine & "doesn't have a number like (S01E01)")
             End If
+
 
         Next
 
@@ -101,32 +109,44 @@
     End Sub
 
     Private Sub MdButton3_Click(sender As Object, e As EventArgs) Handles MdButton3.Click
-        Dim undo0 As IO.FileInfo
-        Dim undo1 As IO.FileInfo
-        ListBox1.Items.Clear()
-        ListBox2.Items.Clear()
-        For i = 0 To yy
 
-            undo1 = themovedfile(i, 1)
-            undo0 = themovedfile(i, 0)
-            themovedfile(i, 0) = undo1
-            themovedfile(i, 1) = undo0
+        If themovedfile Is Nothing Then
+            MsgBox("move some files first")
+        Else
+            Dim undo0 As IO.FileInfo
+            Dim undo1 As IO.FileInfo
+            ListBox1.Items.Clear()
+            ListBox2.Items.Clear()
 
-            Try
-                movethat(themovedfile(i, 0), themovedfile(i, 1))
-                ListBox1.Items.Add(themovedfile(i, 0))
-                ListBox2.Items.Add(themovedfile(i, 1))
+            For i = 0 To yy
+
+                undo1 = themovedfile(i, 1)
+                undo0 = themovedfile(i, 0)
+                themovedfile(i, 0) = undo1
+                themovedfile(i, 1) = undo0
+
+                Try
+
+                    Dim MoveThatDone As Integer = movethat(themovedfile(i, 0), themovedfile(i, 1))
+
+                    If MoveThatDone = 1 Then
+                        ListBox1.Items.Add(themovedfile(i, 0))
+                        ListBox2.Items.Add(themovedfile(i, 1))
+                    End If
 
 
-            Catch ex As Exception
+                Catch ex As Exception
 
-            End Try
+                End Try
 
-        Next
+            Next
+        End If
+
     End Sub
 
     Private Sub MdButton5_Click(sender As Object, e As EventArgs) Handles MdButton5.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
 
 End Class

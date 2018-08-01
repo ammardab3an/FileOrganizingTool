@@ -24,16 +24,20 @@
             destfile = New IO.FileInfo(target & "\" & MyFile.Name)
             movedfile(x, 0) = (MyFile)
             movedfile(x, 1) = (destfile)
-            creatdirectory(target)
-            movethat(MyFile, destfile)
+
+            Dim CreatDirectorfDone As Integer = creatdirectory(target)
+            Dim MoveThatDone As Integer = movethat(MyFile, destfile)
 
             If CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
-
-
                 ListBox1.Items.Add("\" & MyFile.Name)
                 ListBox2.Items.Add("\" & TextBox3.Text & "\" & MyFile.Name)
-               
+
+                If CheckBox1.Checked = True Then
+                    RefreshTheFolderName()
+                End If
+
             End If
+
             If MoveThatDone = 0 Then
                 Try
                     System.IO.Directory.Delete(target)
@@ -66,26 +70,32 @@
     End Sub
 
     Private Sub MdButton1_Click(sender As Object, e As EventArgs) Handles MdButton1.Click
-        Dim undo0 As IO.FileInfo
-        Dim undo1 As IO.FileInfo
-        ListBox1.Items.Clear()
-        ListBox2.Items.Clear()
-        For i = 0 To yy
+        If themovedfile Is Nothing Then
+            MsgBox("move some files first")
+        Else
 
-            undo1 = themovedfile(i, 1)
-            undo0 = themovedfile(i, 0)
-            themovedfile(i, 0) = undo1
-            themovedfile(i, 1) = undo0
+            Dim undo0 As IO.FileInfo
+            Dim undo1 As IO.FileInfo
+            ListBox1.Items.Clear()
+            ListBox2.Items.Clear()
+            For i = 0 To yy
 
-            Try
-                movethat(themovedfile(i, 0), themovedfile(i, 1))
-                ListBox1.Items.Add(themovedfile(i, 0))
-                ListBox2.Items.Add(themovedfile(i, 1))
-            Catch ex As Exception
+                undo1 = themovedfile(i, 1)
+                undo0 = themovedfile(i, 0)
+                themovedfile(i, 0) = undo1
+                themovedfile(i, 1) = undo0
 
-            End Try
 
-        Next
+                Dim MoveThatDone As Integer = movethat(themovedfile(i, 0), themovedfile(i, 1))
+
+                If MoveThatDone = 1 Then
+                    ListBox1.Items.Add(themovedfile(i, 0))
+                    ListBox2.Items.Add(themovedfile(i, 1))
+                End If
+
+            Next
+
+        End If
     End Sub
 
     Private Sub NumericUpDown1_Click(sender As Object, e As EventArgs) Handles NumericUpDown1.Click
