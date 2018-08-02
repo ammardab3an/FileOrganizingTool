@@ -13,7 +13,7 @@
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
         Dim files As String() = e.Data.GetData(DataFormats.FileDrop)
-        Dim movedfile(9999, 1) As IO.FileInfo
+        Dim movedfile(files.Length - 1, 1) As IO.FileInfo
         Dim x As Integer = -1
 
         For Each path In files
@@ -22,8 +22,7 @@
             Dim MyFile = New IO.FileInfo(path)
             Dim target As String = MyFile.Directory.ToString & "\" & TextBox3.Text
             destfile = New IO.FileInfo(target & "\" & MyFile.Name)
-            movedfile(x, 0) = (MyFile)
-            movedfile(x, 1) = (destfile)
+
 
             Dim CreatDirectorfDone As Integer = creatdirectory(target)
             Dim MoveThatDone As Integer = movethat(MyFile, destfile)
@@ -31,6 +30,8 @@
             If CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
                 ListBox1.Items.Add("\" & MyFile.Name)
                 ListBox2.Items.Add("\" & TextBox3.Text & "\" & MyFile.Name)
+                movedfile(x, 0) = (MyFile)
+                movedfile(x, 1) = (destfile)
 
                 If CheckBox1.Checked = True Then
                     RefreshTheFolderName()
@@ -39,6 +40,7 @@
             End If
 
             If MoveThatDone = 0 Then
+                x -= 1
                 Try
                     System.IO.Directory.Delete(target)
                 Catch exc As Exception

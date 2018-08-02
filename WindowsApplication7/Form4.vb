@@ -8,7 +8,7 @@
         ListBox2.Items.Clear()
         ListBox3.Items.Clear()
         Dim files As String() = e.Data.GetData(DataFormats.FileDrop)
-        Dim movedfile(9999, 1) As IO.FileInfo
+        Dim movedfile(files.Length - 1, 1) As IO.FileInfo
         Dim x As Integer = -1
 
         For Each path In files
@@ -42,8 +42,7 @@
 
                 destfile = New IO.FileInfo(target & "\" & MyFile.Name)
 
-                movedfile(x, 0) = (MyFile)
-                movedfile(x, 1) = (destfile)
+
 
                 Dim _CreatDirectorfDone As Integer = creatdirectory(target)
                 Dim __CreatDirectorfDone As Integer = creatdirectory(_target)
@@ -59,11 +58,17 @@
                         ListBox2.Items.Add("\" & MdTextBox1.Text & " " & season & "\" & season & episode & "\" & MyFile.Name)
                     End If
 
-
-
                     ListBox3.Items.Add(FileNumber)
+
+                    movedfile(x, 0) = (MyFile)
+                    movedfile(x, 1) = (destfile)
+
+
                 End If
                 If MoveThatDone = 0 Then
+
+                    x -= 1
+
                     Try
                         System.IO.Directory.Delete(target)
                     Catch exc As Exception
