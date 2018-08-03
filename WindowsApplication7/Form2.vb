@@ -3,7 +3,7 @@
     Dim sourcefile As IO.FileInfo
     Dim destfile As IO.FileInfo
     Dim themovedfile(,) As IO.FileInfo
-    Dim yy As Integer
+
 
 
 
@@ -14,12 +14,12 @@
         ListBox2.Items.Clear()
         Dim files As String() = e.Data.GetData(DataFormats.FileDrop)
         Dim movedfile(files.Length - 1, 1) As IO.FileInfo
-        Dim x As Integer = -1
 
-        For Each path In files
 
-            x += 1
-            Dim MyFile = New IO.FileInfo(path)
+        For i = 0 To files.Length - 1
+
+
+            Dim MyFile = New IO.FileInfo(files(i))
             Dim target As String = MyFile.Directory.ToString & "\" & TextBox3.Text
             destfile = New IO.FileInfo(target & "\" & MyFile.Name)
 
@@ -30,8 +30,8 @@
             If CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
                 ListBox1.Items.Add("\" & MyFile.Name)
                 ListBox2.Items.Add("\" & TextBox3.Text & "\" & MyFile.Name)
-                movedfile(x, 0) = (MyFile)
-                movedfile(x, 1) = (destfile)
+                movedfile(i, 0) = (MyFile)
+                movedfile(i, 1) = (destfile)
 
                 If CheckBox1.Checked = True Then
                     RefreshTheFolderName()
@@ -40,7 +40,6 @@
             End If
 
             If MoveThatDone = 0 Then
-                x -= 1
                 Try
                     System.IO.Directory.Delete(target)
                 Catch exc As Exception
@@ -55,7 +54,7 @@
             RefreshTheFolderName()
         End If
         themovedfile = movedfile
-        yy = x
+
 
     End Sub
 
@@ -80,10 +79,10 @@
             Dim undo1 As IO.FileInfo
             ListBox1.Items.Clear()
             ListBox2.Items.Clear()
-            For i = 0 To yy
+            For i = 0 To themovedfile.GetLength(0) - 1
 
-                undo1 = themovedfile(i, 1)
                 undo0 = themovedfile(i, 0)
+                undo1 = themovedfile(i, 1)
                 themovedfile(i, 0) = undo1
                 themovedfile(i, 1) = undo0
 
@@ -96,7 +95,6 @@
                 End If
 
             Next
-
         End If
     End Sub
 

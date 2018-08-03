@@ -2,18 +2,18 @@
     Dim sourcefile As IO.FileInfo
     Dim destfile As IO.FileInfo
     Dim themovedfile(,) As IO.FileInfo
-    Dim yy As Integer = Nothing
+
     Private Sub DialogSkin1_DragDrop(sender As Object, e As DragEventArgs) Handles DialogSkin1.DragDrop
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
         ListBox3.Items.Clear()
         Dim files As String() = e.Data.GetData(DataFormats.FileDrop)
         Dim movedfile(files.Length - 1, 1) As IO.FileInfo
-        Dim x As Integer = -1
 
-        For Each path In files
 
-            Dim MyFile = New IO.FileInfo(path)
+        For i = 0 To files.Length - 1
+
+            Dim MyFile = New IO.FileInfo(files(i))
             Dim FileNumber As String = thereIsAnyFileNumber(MyFile.Name)
 
             If FileNumber = Nothing Then
@@ -22,34 +22,32 @@
                 MsgBox("The file: " & MyFile.Name & vbNewLine & "has more than one (file number)")
             Else
 
-                x += 1
+
                 Dim season As String
                 Dim episode As String
 
                 season = "S" & FileNumber.Chars(1) & FileNumber.Chars(2)
                 episode = "E" & FileNumber.Chars(4) & FileNumber.Chars(5)
 
-                Dim _target As String
+                Dim target As String
 
                 If MdTextBox1.Text = "" Then
-                    _target = MyFile.Directory.ToString & "\" & season
+                    target = MyFile.Directory.ToString & "\" & season & "\" & season & episode
                 Else
-                    _target = MyFile.Directory.ToString & "\" & MdTextBox1.Text & " " & season
+                    target = MyFile.Directory.ToString & "\" & MdTextBox1.Text & " " & season & "\" & season & episode
                 End If
-
-
-                Dim target As String = _target & "\" & season & episode
 
                 destfile = New IO.FileInfo(target & "\" & MyFile.Name)
 
 
 
-                Dim _CreatDirectorfDone As Integer = creatdirectory(target)
-                Dim __CreatDirectorfDone As Integer = creatdirectory(_target)
+                Dim CreatDirectorfDone As Integer = creatdirectory(target)
                 Dim MoveThatDone As Integer = movethat(MyFile, destfile)
 
 
-                If _CreatDirectorfDone = 1 AndAlso __CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
+                If CreatDirectorfDone = 1 AndAlso MoveThatDone = 1 Then
+
+                    ListBox3.Items.Add(FileNumber)
                     ListBox1.Items.Add("\" & MyFile.Name)
 
                     If MdTextBox1.Text = "" Then
@@ -58,17 +56,13 @@
                         ListBox2.Items.Add("\" & MdTextBox1.Text & " " & season & "\" & season & episode & "\" & MyFile.Name)
                     End If
 
-                    ListBox3.Items.Add(FileNumber)
 
-                    movedfile(x, 0) = (MyFile)
-                    movedfile(x, 1) = (destfile)
+                    movedfile(i, 0) = (MyFile)
+                    movedfile(i, 1) = (destfile)
 
 
                 End If
                 If MoveThatDone = 0 Then
-
-                    x -= 1
-
                     Try
                         System.IO.Directory.Delete(target)
                     Catch exc As Exception
@@ -82,7 +76,7 @@
         Next
 
         themovedfile = movedfile
-        yy = x
+
 
     End Sub
 
@@ -123,30 +117,23 @@
             ListBox1.Items.Clear()
             ListBox2.Items.Clear()
 
-            For i = 0 To yy
+            For i = 0 To themovedfile.GetLength(0) - 1
 
-                undo1 = themovedfile(i, 1)
                 undo0 = themovedfile(i, 0)
+                undo1 = themovedfile(i, 1)
                 themovedfile(i, 0) = undo1
                 themovedfile(i, 1) = undo0
 
-                Try
 
-                    Dim MoveThatDone As Integer = movethat(themovedfile(i, 0), themovedfile(i, 1))
+                Dim MoveThatDone As Integer = movethat(themovedfile(i, 0), themovedfile(i, 1))
 
-                    If MoveThatDone = 1 Then
-                        ListBox1.Items.Add(themovedfile(i, 0))
-                        ListBox2.Items.Add(themovedfile(i, 1))
-                    End If
-
-
-                Catch ex As Exception
-
-                End Try
+                If MoveThatDone = 1 Then
+                    ListBox1.Items.Add(themovedfile(i, 0))
+                    ListBox2.Items.Add(themovedfile(i, 1))
+                End If
 
             Next
         End If
-
     End Sub
 
     Private Sub MdButton5_Click(sender As Object, e As EventArgs) Handles MdButton5.Click
